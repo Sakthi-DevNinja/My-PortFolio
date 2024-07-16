@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>My portfolio and git installation setup completed successfully!!</h1>
+        <h1>My portfolio and git installation was setup completed successfully!!</h1>
       </header>
     </div>
   );
