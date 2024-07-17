@@ -49,8 +49,9 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'grab',
-          },
+            // mode: 'grab',
+            mode: 'repulse',
+        },
         },
         modes: {
           push: {
@@ -80,7 +81,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 8,
           straight: false,
         },
         number: {
