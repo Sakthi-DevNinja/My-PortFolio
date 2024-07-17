@@ -40,7 +40,7 @@ const Landing = () => {
 
                 <a href='https://www.linkedin.com/in/sakthivel-dev' target='_BLANK' rel="noreferrer" className="social-links linkedin"><FontAwesomeIcon icon={faLinkedinIn} /></a>
 
-                <a href='#' target='_BLANK' rel="noreferrer" className="social-links twitterx"><FontAwesomeIcon icon={faXTwitter} /></a> 
+                {/* <a href='#' target='_BLANK' rel="noreferrer" className="social-links twitterx"><FontAwesomeIcon icon={faXTwitter} /></a>  */}
 
                 <a href='https://github.com/Sakthi-DevNinja' target='_BLANK' rel="noreferrer" className="social-links github"><FontAwesomeIcon icon={faGithub} /></a>  
             </div>
