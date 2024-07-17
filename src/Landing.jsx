@@ -31,6 +31,31 @@ const Landing = () => {
             </div>
             <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
 
+            <div className='contact-list'>
+                <a href='#whatsapp' target='_BLANK' className="social-links whatsapp">
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                </a>
+                
+                <a href='#facebook' target='_BLANK' className="social-links facebook">
+                    <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+
+                <a href='#instagram' target='_BLANK' className="social-links instagram">
+                    <FontAwesomeIcon icon={faInstagram} />
+                </a>
+
+                <a href='#linkedin' target='_BLANK' className="social-links linkedin">
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+
+                <a href='#twitterx' target='_BLANK' className="social-links twitterx">
+                    <FontAwesomeIcon icon={faXTwitter} />
+                </a>
+
+                <a href='#github' target='_BLANK' className="social-links github">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>  
+            </div>
 
         </div>
     </main>
