@@ -133,7 +133,31 @@ div#aboutme {
   text-align: center;
 }
 
-h1.class-hdr {
+.class-hdr {
   font-size: 36px;
   color: #555;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-links {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ffffff33;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ffffff;
+  background: #ffffff29;
 }
