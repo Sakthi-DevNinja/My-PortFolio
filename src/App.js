@@ -1,6 +1,7 @@
 // import Header from './Header';
 // import Footer from './Footer';
 import Landing from './Landing';
+import Aboutme from './Aboutme';
 import './App.css';
 import ParticlesComponent from './components/particles';
 
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <ParticlesComponent id="particles" />
       {/* <Header /> */}
-      <Landing />
       {/* <Footer /> */}
+      <Landing />
+      <Aboutme />
     </div>
   );
 }
