@@ -7,13 +7,28 @@
   
   @media (max-width: 480px) {
     .sec-hdr {
-        padding: 15px;
+        padding:  0;
         text-align: left;
       }
       
-      h1.class-hdr {
+      .class-hdr {
         font-size: 25px;
-        color: #555;
-      }  
+        /* color: #1e2f97; */
+        /* background: #cad5e2; */
+        /* padding: 7px 35px; */
+        /* width: fit-content; */
+        /* border-radius: 46px; */
+    }
+
+    .content-dtl {
+        /* background: #cad5e2f5; */
+        /* padding: 15px; */
+        text-align: left;
+        /* border-radius: 10px; */
+        line-height: 24px;
+        letter-spacing: 0.035em;
+        margin-top: 10px;
+    }
+        
   }
   
