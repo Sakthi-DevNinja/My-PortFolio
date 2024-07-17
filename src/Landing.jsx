@@ -7,7 +7,7 @@ import {
   faFacebookF,
   faInstagram,
   faLinkedinIn,
-  faTwitter,
+  faXTwitter,
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -32,29 +32,29 @@ const Landing = () => {
             <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
 
             <div className='contact-list'>
-                <div className="social-links whatsapp">
+                <a href='#whatsapp' className="social-links whatsapp">
                     <FontAwesomeIcon icon={faWhatsapp} />
-                </div>
+                </a>
                 
-                <div className="social-links facebook">
+                <a href='#facebook' className="social-links facebook">
                     <FontAwesomeIcon icon={faFacebookF} />
-                </div>
+                </a>
 
-                <div className="social-links instagram">
+                <a href='#instagram' className="social-links instagram">
                     <FontAwesomeIcon icon={faInstagram} />
-                </div>
+                </a>
 
-                <div className="social-links linkedin">
+                <a href='#linkedin' className="social-links linkedin">
                     <FontAwesomeIcon icon={faLinkedinIn} />
-                </div>
+                </a>
 
-                <div className="social-links twitterx">
-                    <FontAwesomeIcon icon={faTwitter} />
-                </div>
+                <a href='#twitterx' className="social-links twitterx">
+                    <FontAwesomeIcon icon={faXTwitter} />
+                </a>
 
-                <div className="social-links github">
+                <a href='#github' className="social-links github">
                     <FontAwesomeIcon icon={faGithub} />
-                </div>  
+                </a>  
             </div>
 
         </div>
