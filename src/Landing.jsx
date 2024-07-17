@@ -44,7 +44,7 @@ const Landing = () => {
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
 
-                <a href='www.linkedin.com/in/sakthivel-dev' target='_BLANK' className="social-links linkedin">
+                <a href='https://www.linkedin.com/in/sakthivel-dev' target='_BLANK' className="social-links linkedin">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
 
