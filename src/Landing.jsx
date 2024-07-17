@@ -32,7 +32,7 @@ const Landing = () => {
             <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
 
             <div className='contact-list'>
-                <a href='https://wa.me/9585919130?text=Welcome!' target='_blank' rel="noreferrer" className="social-links whatsapp"><FontAwesomeIcon icon={faWhatsapp} /></a>
+                <a href='https://wa.me/9585909130?text=Welcome!' target='_blank' rel="noreferrer" className="social-links whatsapp"><FontAwesomeIcon icon={faWhatsapp} /></a>
                 
                 <a href='https://www.facebook.com/profile.php?id=100011062291623&mibextid=ZbWKwL' target='_blank' rel="noreferrer" className="social-links facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
 
