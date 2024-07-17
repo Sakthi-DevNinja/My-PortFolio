@@ -32,27 +32,27 @@ const Landing = () => {
             <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
 
             <div className='contact-list'>
-                <a href='#whatsapp' className="social-links whatsapp">
+                <a href='https://wa.me/9585919130?text=Welcome!' target='_BLANK' className="social-links whatsapp">
                     <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
                 
-                <a href='#facebook' className="social-links facebook">
+                <a href='https://www.facebook.com/profile.php?id=100011062291623&mibextid=ZbWKwL' target='_BLANK' className="social-links facebook">
                     <FontAwesomeIcon icon={faFacebookF} />
                 </a>
 
-                <a href='#instagram' className="social-links instagram">
+                <a href='https://www.instagram.com/sakthivel14325?igsh=b2JrcWtsZHc3ZnUw' target='_BLANK' className="social-links instagram">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
 
-                <a href='#linkedin' className="social-links linkedin">
+                <a href='www.linkedin.com/in/sakthivel-dev' target='_BLANK' className="social-links linkedin">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
 
-                <a href='#twitterx' className="social-links twitterx">
+                <a href='' target='_BLANK' className="social-links twitterx">
                     <FontAwesomeIcon icon={faXTwitter} />
                 </a>
 
-                <a href='#github' className="social-links github">
+                <a href='https://github.com/Sakthi-DevNinja' target='_BLANK' className="social-links github">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>  
             </div>
