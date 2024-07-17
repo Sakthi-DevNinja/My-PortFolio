@@ -48,7 +48,7 @@ const Landing = () => {
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
 
-                <a href='' target='_BLANK' className="social-links twitterx">
+                <a href='#' target='_BLANK' className="social-links twitterx">
                     <FontAwesomeIcon icon={faXTwitter} />
                 </a>
 
