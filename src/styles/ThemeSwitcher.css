@@ -1,0 +1,60 @@
+/* src/components/ThemeSwitcher.css */
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-switcher-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100px; /* Adjust width as needed */
+}
+
+.theme-switcher-slider input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 3px;
+    border: 5px solid #fff;
+    box-shadow: inset 0px 0px 6px #111;
+}
+
+.theme-switcher-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.theme-switcher-icons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.theme-switcher-icons .icon {
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-switcher-icons .icon.active {
+  color: var(--active-icon-color); /* Define active icon color in your theme */
+}

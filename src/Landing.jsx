@@ -33,7 +33,7 @@ const Landing = () => {
             <div className='lt-blk'>
                 <div className='personal-dtls'>
                     <div className='welcome-intro md-hide'>Hello, It's Me</div>
-                    <div className="name">Sakthivel S</div>
+                    <div className="name">Sakthivel</div>
                     
                     {/*<svg viewBox="0 0 1320 300">
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">

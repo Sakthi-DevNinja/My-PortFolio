@@ -1,7 +1,7 @@
+import Header from './Header';
 import Landing from './Landing';
 import Aboutme from './Aboutme';
 
-// import Header from './Header';
 // import Footer from './Footer';
 // import Skills from './Skills';
 // import Ourservice from './Ourservice';
@@ -13,14 +13,22 @@ import Aboutme from './Aboutme';
 
 import './App.css';
 import ParticlesComponent from './components/particles';
+import { useTheme } from './context/ThemeContext';
+
+import './styles/global.css'; // Import global styles
+
 
 
 
 function App() {
+
+  const { theme } = useTheme();
+
   return (
-    <div className="App">
+    <div  className={`App ${theme}`}>
+       
       <ParticlesComponent id="particles" />
-      {/* <Header /> */}
+      <Header />
       <Landing />
       <Aboutme />
 

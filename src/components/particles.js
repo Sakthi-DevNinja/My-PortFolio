@@ -1,30 +1,15 @@
-
+// src/components/ParticlesComponent.js
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
-
-
+import { useEffect, useMemo } from "react";
+import { useTheme } from '../context/ThemeContext';
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = (props) => {
+  const { theme } = useTheme();
 
-    // eslint-disable-next-line
-    const [init, setInit] = useState(false); 
-
-  // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
       await loadSlim(engine);
-      //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
     });
   }, []);
 
@@ -32,12 +17,31 @@ const ParticlesComponent = (props) => {
     console.log(container);
   };
 
+  // Move these functions inside the useMemo callback
+  const options = useMemo(() => {
+    const getBackgroundColor = () => {
+      switch (theme) {
+        case 'dark':
+          return '#111';
+        case 'blue':
+          return '#1e2f97';
+        case 'light':
+        default:
+          return '#fff';
+      }
+    };
 
-  const options = useMemo(
-    () => ({
+    const getParticleColor = () => {
+      return theme === 'light' ? '#000000' : '#FFFFFF'; // Black for light theme, white otherwise
+    };
+
+    const backgroundColor = getBackgroundColor();
+    const particleColor = getParticleColor();
+    
+    return {
       background: {
         color: {
-          value: "#1E2F97",
+          value: backgroundColor,
         },
       },
       fpsLimit: 120,
@@ -49,9 +53,8 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            // mode: 'grab',
             mode: 'repulse',
-        },
+          },
         },
         modes: {
           push: {
@@ -65,10 +68,10 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: particleColor,
         },
         links: {
-          color: "#FFFFFF",
+          color: particleColor,
           distance: 150,
           enable: true,
           opacity: 0.3,
@@ -101,12 +104,10 @@ const ParticlesComponent = (props) => {
         },
       },
       detectRetina: true,
-    }),
-    [],
-  );
+    };
+  }, [theme]); // Keep only 'theme' if it's used directly inside useMemo
 
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
 export default ParticlesComponent;

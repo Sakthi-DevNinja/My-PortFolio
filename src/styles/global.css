@@ -1,0 +1,36 @@
+/* src/styles/global.css */
+:root {
+    --primary-color-light: #ffffff;
+    --primary-color-dark: #111111;
+    --primary-color-blue: #1e2f97;
+  
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+    --text-color-blue: #ffffff;
+  }
+
+/* src/styles/variables.css */
+:root {
+    --primary-color: #1e2f97; /* Blue */
+    --secondary-color: #f0f0f0; /* Light Gray */
+    --text-color: #fff; /* Dark Gray */
+  }
+  
+  [data-theme='dark'] {
+    --primary-color: #111; /* Dark background */
+    --secondary-color: #333; /* Dark gray */
+    --text-color: #fff; /* White text */
+  }
+  
+  [data-theme='blue'] {
+    --primary-color: #1e2f97; /* Blue */
+    --secondary-color: #f0f0f0; /* Light Gray */
+    --text-color: #ffffff; /* Dark Gray */
+  }
+  
+  [data-theme='light'] {
+    --primary-color: #1e2f97; /* Blue */
+    --secondary-color: #f0f0f0; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+  }
+  

@@ -51,3 +51,40 @@ html {
     transform: rotate(360deg);
   }
 }
+
+
+
+/* App theme */
+.app {
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.app.blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
