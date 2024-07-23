@@ -14,23 +14,27 @@
     --primary-color: #1e2f97; /* Blue */
     --secondary-color: #f0f0f0; /* Light Gray */
     --text-color: #fff; /* Dark Gray */
+    --dynamic-txt: #ffee58; /* yellow */
   }
   
   [data-theme='dark'] {
     --primary-color: #111; /* Dark background */
     --secondary-color: #333; /* Dark gray */
     --text-color: #fff; /* White text */
+    --dynamic-txt: #F44336; /* red text */
   }
   
   [data-theme='blue'] {
     --primary-color: #1e2f97; /* Blue */
     --secondary-color: #f0f0f0; /* Light Gray */
     --text-color: #ffffff; /* Dark Gray */
+     --dynamic-txt: #ffee58; /* yellow */
   }
   
   [data-theme='light'] {
     --primary-color: #1e2f97; /* Blue */
     --secondary-color: #f0f0f0; /* Light Gray */
     --text-color: #333; /* Dark Gray */
+    --dynamic-txt: #3f51b5; /* Dark blue */
   }
   

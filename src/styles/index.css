@@ -37,7 +37,7 @@
 /* Shrikhand / Cinzel Decorative / Knewave / Aboreto */
 
 
-  *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,6 +50,12 @@ body {
   min-height: 100vh;
   user-select: none;
   /* padding: 15px 16px 50px; */
+}
+
+
+.flex{
+  display: flex;
+  align-items: center;
 }
 
 .app{
@@ -67,11 +73,41 @@ header, footer{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #3232322e;
   color: var(--text-color);
-  height: 50px;
+  height: 70px;
+  background-color: #3232322e;
+  justify-content: center;
 }
+
+.nav-wrapper {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul{
+  gap: 40px;
+}
+
+nav ul li a{
+  color:  var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my-logo{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.side-bar-icons{display: none;}
+
 
 .hdr-sec {
   display: flex;
@@ -87,7 +123,7 @@ h1 {
 main{
   width: 100%;
   /* height: calc(100vh - 100px); */
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: row-reverse;
   flex-grow: 1;
@@ -160,11 +196,12 @@ footer{
 .role, .md-hide, .dynamic-role, .welcome-intro{
   font-size: 25px;
   letter-spacing: 0.035em;
+  text-align: left;
 }
 
 .dynamic-role{
   font-weight: bold;
-  color: #ffee58;
+  color: var(--dynamic-txt);
   
 }
 
@@ -215,7 +252,7 @@ footer{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid #ffffff33;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
   padding: 5px;
   color: var(--text-color);

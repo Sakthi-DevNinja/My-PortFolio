@@ -2,7 +2,7 @@ import React from 'react'
 
 const Aboutme = () => {
   return (
-    <div id='aboutme' >
+    <section id='aboutme' >
 
         <div className='content-blk'>
             <div className="sec-hdr">
@@ -33,7 +33,7 @@ const Aboutme = () => {
         </div>
 
 
-    </div>
+    </section>
     
   )
 }

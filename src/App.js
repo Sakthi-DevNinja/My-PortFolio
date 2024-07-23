@@ -1,8 +1,8 @@
 import Header from './Header';
 import Landing from './Landing';
 import Aboutme from './Aboutme';
+import Footer from './Footer';
 
-// import Footer from './Footer';
 // import Skills from './Skills';
 // import Ourservice from './Ourservice';
 // import Education from './Education';
@@ -50,7 +50,7 @@ function App() {
       {/* <Education /> */}
       {/* <Ourservice /> */}
       {/* <Skills /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

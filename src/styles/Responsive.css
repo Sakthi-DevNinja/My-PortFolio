@@ -7,6 +7,14 @@
   
   @media (max-width: 480px) {
 
+    nav{display: none;}
+    .theme-switcher{zoom: 65%;}
+    .nav-wrapper{padding: 0 10px;}
+
+    .side-bar-close{display: none;}
+    .nav-rt{align-items: center;gap:15px}
+    .side-bar-icons{display: flex;}
+
     .main-container{
       display: flex;
       flex-direction: column;
@@ -29,8 +37,11 @@
     }
 
     .name{font-size: 45px;}
-    .about-me, .dynamic-role{font-size: 16px; color: #fff;}
+    .about-me {font-size: 16px;color: var(--text-color)}
     .role{line-height: 12px;}
+    .dynamic-role{
+      font-size:18px; 
+    }
     
      .md-hide{display: none;}
     
