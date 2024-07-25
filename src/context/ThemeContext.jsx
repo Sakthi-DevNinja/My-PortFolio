@@ -4,7 +4,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('blue');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     const root = document.documentElement;
@@ -13,12 +13,14 @@ export const ThemeProvider = ({ children }) => {
       case 'dark':
         root.setAttribute('data-theme', 'dark');
         break;
-        case 'light':
-            root.setAttribute('data-theme', 'light');
-            break;
-        case 'blue':
-        default:
+      case 'light':
+          root.setAttribute('data-theme', 'light');
+          break;
+      case 'blue':
         root.setAttribute('data-theme', 'blue');
+        break;
+      default:
+        root.setAttribute('data-theme', 'dark');
         break;
     }
   }, [theme]);

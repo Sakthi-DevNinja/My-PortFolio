@@ -172,7 +172,7 @@ footer{
 
 .lt-blk{
   width: 40%;
-  padding-left: 35px;
+  padding-left: 75px;
 } 
 
 .lt-blk {
@@ -219,11 +219,17 @@ footer{
   text-align: left;
 }
 
-.dynamic-role{
+.dynamic-role .typing,  .typed-cursor{
+  font-size: 25px;
   font-weight: bold;
   color: var(--dynamic-txt);
-  
 }
+
+.typed-cursor{
+  color: var(--dynamic-txt);
+
+}
+  
 
 .about-me{
   font-size: 20px;

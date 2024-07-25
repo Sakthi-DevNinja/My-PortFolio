@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
         setSliderValue(2);
         break;
       default:
-        setSliderValue(2); // Default to light theme
+        setSliderValue(0); // Default to light theme
         break;
     }
   }, [theme]);
@@ -38,10 +38,11 @@ const ThemeSwitcher = () => {
       case 1:
         setTheme('blue');
         break;
-      case 2:
-        setTheme('light');
-        break;
+        case 2:
+          setTheme('light');
+          break;
       default:
+            setTheme('dark');
         break;
     }
   };
@@ -60,6 +61,7 @@ const ThemeSwitcher = () => {
         setSliderValue(2);
         break;
       default:
+        setSliderValue(0);
         break;
     }
   };

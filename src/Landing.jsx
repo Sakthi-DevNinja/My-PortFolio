@@ -1,15 +1,10 @@
 import React from 'react';
-import Image from './images/sv.jpeg';
 
+import Image from './images/sv.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faWhatsapp,
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faXTwitter,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebookF, faInstagram, faLinkedinIn, faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+import TypingAnimation from './components/TypingAnimation';
 
 
 
@@ -35,13 +30,14 @@ const Landing = () => {
                     <div className='welcome-intro md-hide'>Hello, It's Me</div>
                     <div className="name">Sakthivel</div>
                     
+                    
                     {/*<svg viewBox="0 0 1320 300">
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                         Sakthivel S
                         </text>
                         </svg> */}
 
-                    <div className="role"><span className='md-hide'>And i'm a</span> <span className='dynamic-role typing'>Full Stack Developer</span></div>
+                    <div className="role"><span className='welcome-intro'>And i'm a</span> <span className='dynamic-role'><TypingAnimation /></span></div>
                 </div>
                 <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
 
