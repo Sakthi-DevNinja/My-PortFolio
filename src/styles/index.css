@@ -74,19 +74,30 @@ header, footer{
   display: flex;
   align-items: center;
   color: var(--text-color);
-  background-color: #3232322e;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+  
 }
 
+
+
 header {
+  padding: 15px 0;
   height: 70px;
   position: sticky;
   top: 0;
-  transition: top 0.3s;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.sticky{
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 footer{
   height: 50px;
+  background-color: #3232322e;
 }
 
 
@@ -172,7 +183,7 @@ footer{
 
 .lt-blk{
   width: 40%;
-  padding-left: 75px;
+  padding-left: 7%;
 } 
 
 .lt-blk {
@@ -262,6 +273,32 @@ footer{
   padding: 5px;
   color: var(--text-color);
   background: #ffffff29;
+}
+
+/* src/components/ScrollUpButton.css */
+.scroll-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-weight: 800;
+  box-shadow: 0px 2px 9px #161616;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-up-btn.show {
+  display: flex ;
+  transition: all 0.5s ease-in-out;
 }
 
 

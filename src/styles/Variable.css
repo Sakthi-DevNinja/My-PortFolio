@@ -18,7 +18,7 @@
   }
   
   [data-theme='light'] {
-    --primary-color: #1e2f97; /* Blue */
+    --primary-color: #efefef; /* Blue */
     --secondary-color: #f0f0f0; /* Light Gray */
     --text-color: #333; /* Dark Gray */
   }

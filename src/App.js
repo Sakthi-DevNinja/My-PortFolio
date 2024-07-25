@@ -1,23 +1,29 @@
+
+// Sections
 import Header from './Header';
 import Landing from './Landing';
 import Aboutme from './Aboutme';
-
 import Skills from './Skills';
 import Ourservice from './Ourservice';
 import Education from './Education';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
-
 import Footer from './Footer';
 
 
-import './App.css';
+// Components
 import ParticlesComponent from './components/particles';
-import { useTheme } from './context/ThemeContext';
+import Scrolltotop from './components/ScrollUpButton';
 
-import './styles/global.css'; // Import global styles
+// Theme 
+import { useTheme } from './context/ThemeContext';
 import { Helmet } from 'react-helmet';
+
+
+// Css
+import './App.css';
+
 
 
 
@@ -42,6 +48,7 @@ function App() {
     </Helmet>
       
       <ParticlesComponent id="particles" />
+      <Scrolltotop />
 
       <Header />
       <Landing />
@@ -53,6 +60,7 @@ function App() {
       <Projects />
       <Contact />  
       <Footer />
+
     </div>
   );
 }

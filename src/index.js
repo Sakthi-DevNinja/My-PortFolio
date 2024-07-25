@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+import { ThemeProvider } from './context/ThemeContext';
+
 import './styles/index.css';
 import './styles/Responsive.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from './context/ThemeContext';
+import './styles/global.css'; // Import global styles
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
