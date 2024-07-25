@@ -1,17 +1,33 @@
 // src/Header.jsx
-import React from "react";
-import { useTheme } from "./context/ThemeContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
-
+import React, { useEffect, useState, useCallback } from 'react';
+import { useTheme } from './context/ThemeContext';
+import ThemeSwitcher from './components/ThemeSwitcher';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-
 const Header = () => {
   const { theme } = useTheme();
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = useCallback(() => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos);
+    setPrevScrollPos(currentScrollPos);
+  }, [prevScrollPos]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
 
   return (
-    <header className={`header ${theme}`}>
+    <header
+      className={`header ${theme}`}
+      style={{ top: visible ? '0' : '-80px', transition: 'top 0.3s' }}
+    >
       <div className="nav-wrapper flex">
         <a href="#home" rel="noreferrer" className="my-logo">
           MyLogo
@@ -19,40 +35,39 @@ const Header = () => {
         <nav>
           <ul className="flex">
             <li className="nav-link">
-              <a href="#Home" rel="noreferrer">Home</a>
+              <a href="#home" rel="noreferrer">Home</a>
             </li>
             <li className="nav-link">
-              <a href="#About" rel="noreferrer">About
-              </a>
+              <a href="#aboutme" rel="noreferrer">About</a>
             </li>
             <li className="nav-link">
-              <a href="#Projects" rel="noreferrer">Projects</a>
+              <a href="#skills" rel="noreferrer">Skills</a>
             </li>
             <li className="nav-link">
-              <a href="#Skill" rel="noreferrer">Skills</a>
+              <a href="#experience" rel="noreferrer">Experience</a>
             </li>
             <li className="nav-link">
-              <a href="#Experience" rel="noreferrer">Experience</a>
+              <a href="#education" rel="noreferrer">Education</a>
             </li>
             <li className="nav-link">
-              <a href="#Education" rel="noreferrer">Education</a>
+              <a href="#projects" rel="noreferrer">Projects</a>
             </li>
             <li className="nav-link">
-              <a href="#Contact" rel="noreferrer">Contact</a>
+              <a href="#contact" rel="noreferrer">Contact</a>
             </li>
           </ul>
         </nav>
-		<div className="nav-rt flex">
-        	<ThemeSwitcher />
-			<div className="side-bar-icons flex">
-				<div className="side-bar-open">
-					<FontAwesomeIcon icon={faBars} />
-				</div>
-				<div className="side-bar-close">
-					<FontAwesomeIcon icon={faXmark} />
-				</div>
-			</div>
-		</div>
+        <div className="nav-rt flex">
+          <ThemeSwitcher />
+          <div className="side-bar-icons flex">
+            <div className="side-bar-open">
+              <FontAwesomeIcon icon={faBars} />
+            </div>
+            <div className="side-bar-close">
+              <FontAwesomeIcon icon={faXmark} />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

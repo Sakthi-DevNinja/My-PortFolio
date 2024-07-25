@@ -17,7 +17,7 @@ import {
  
 const Landing = () => {
   return (
-    <main>
+    <main id='home'>
         
         <div className='main-container'>
             <div className='rt-blk'>

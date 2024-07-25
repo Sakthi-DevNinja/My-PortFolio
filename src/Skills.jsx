@@ -2,8 +2,10 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <section>
-      
+    <section id='skills'>
+      <br />
+      <h1>Projects</h1>
+
     </section>
   )
 }
