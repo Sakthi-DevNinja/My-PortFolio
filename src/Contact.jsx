@@ -3,8 +3,12 @@ import React from 'react'
 const Contact = () => {
   return (
     <section id='contact'>
-        <br />
-      <h1>Contact Me</h1>
+      <div className="sec-hdr-wrapper">
+        <div className="sec-main-hdr">Contact me</div>
+        <div className="sec-sub-hdr">Get in touch</div>
+      </div>
+
+    
     </section>
   )
 }

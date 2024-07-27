@@ -3,9 +3,12 @@ import React from 'react'
 const Ourservice = () => {
   return (
     <section id='ourservice'>
-      <br />
-      <h1>Ourservice</h1>
+      <div className="sec-hdr-wrapper">
+        <div className="sec-main-hdr">My Services</div>
+        <div className="sec-sub-hdr">What i provide</div>
+      </div>
 
+    
     </section>
   )
 }

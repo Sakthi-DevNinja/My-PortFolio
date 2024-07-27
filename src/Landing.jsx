@@ -39,7 +39,7 @@ const Landing = () => {
 
                     <div className="role"><span className='welcome-intro'>And i'm a</span> <span className='dynamic-role'><TypingAnimation /></span></div>
                 </div>
-                <div className='about-me'>Enthusiastic about crafting web solutions <br /> HTML, CSS, JavaScript, PHP, MySQL</div>
+                <div className='about-me'>Enthusiastic about crafting web solutions</div>
 
                 <div className='contact-list'>
                     <a href='https://wa.me/9585909130?text=Welcome!' target='_blank' rel="noreferrer" className="social-links whatsapp"><FontAwesomeIcon icon={faWhatsapp} /></a>

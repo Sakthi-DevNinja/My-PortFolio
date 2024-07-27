@@ -3,9 +3,12 @@ import React from 'react'
 const Projects = () => {
   return (
     <section id='projects'>
-      <br />
-      <h1>Projects</h1>
+      <div className="sec-hdr-wrapper">
+        <div className="sec-main-hdr">Projects</div>
+        <div className="sec-sub-hdr">My work</div>
+      </div>
 
+     
     </section>
   )
 }

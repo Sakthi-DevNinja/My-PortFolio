@@ -145,8 +145,10 @@ h1 {
 section{
   /* height: calc(100vh - 70px); */
   height: 100vh;
-  background-color:  #fff;
-  border-bottom: 5px solid #000;
+  background-color:  var(--primary-color);
+  /* border-bottom: 5px solid var(--text-color); */
+  padding: 50px 70px 40px;
+  color: var(--text-color);
 
 }
 
@@ -236,6 +238,8 @@ footer{
   color: var(--dynamic-txt);
 }
 
+
+
 .typed-cursor{
   color: var(--dynamic-txt);
 
@@ -280,8 +284,8 @@ footer{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 4px;
   padding: 10px;
@@ -300,6 +304,46 @@ footer{
   display: flex ;
   transition: all 0.5s ease-in-out;
 }
+
+
+/* Section Header  */
+.sec-hdr-wrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.sec-main-hdr {
+  width: fit-content;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.sec-sub-hdr {
+  font-size: 15px;
+  color: var(--dynamic-txt);
+  font-weight: bold;
+  position: relative;
+}
+
+.sec-sub-hdr::before,
+.sec-sub-hdr::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 12px;
+}
+
+.sec-sub-hdr::before {right: 112%;}
+.sec-sub-hdr::after{left: 112%;}
+
 
 
 /* SVG TEXT ANIMATION */
