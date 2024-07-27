@@ -73,7 +73,7 @@ img.aboutme-img {
 
     .about-content .right .text {margin-top: 25px;}
     
-    .about-content .right a {width: 70%;}
+    .about-content .right a {width: 70%; margin: 25px auto 0;}
     
     
 }
