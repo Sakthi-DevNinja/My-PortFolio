@@ -43,7 +43,7 @@ const Header = () => {
             <li className="nav-link"><a href="#home" rel="noreferrer">Home</a></li>
             <li className="nav-link"><a href="#aboutme" rel="noreferrer">About</a></li>
             <li className="nav-link"><a href="#skills" rel="noreferrer">Skills</a></li>
-            <li className="nav-link"><a href="#experience" rel="noreferrer">Experience</a></li>
+            {/* <li className="nav-link"><a href="#experience" rel="noreferrer">Experience</a></li> */}
             <li className="nav-link"><a href="#education" rel="noreferrer">Education</a></li>
             <li className="nav-link"><a href="#projects" rel="noreferrer">Projects</a></li>
             <li className="nav-link"><a href="#contact" rel="noreferrer">Contact</a></li>
