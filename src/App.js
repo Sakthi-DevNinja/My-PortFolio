@@ -6,7 +6,7 @@ import Aboutme from './Aboutme';
 import Skills from './Skills';
 import Ourservice from './Ourservice';
 import Education from './Education';
-import Experience from './Experience';
+// import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -54,7 +54,7 @@ function App() {
       <Landing />
       <Aboutme />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <Education />
       <Ourservice />
       <Projects />

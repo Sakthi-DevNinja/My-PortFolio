@@ -1,6 +1,10 @@
 // src/components/ScrollUpButton.jsx
 import React, { useEffect, useState } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+
+
 const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -25,7 +29,7 @@ const ScrollUpButton = () => {
       className={`scroll-up-btn ${isVisible ? 'show' : ''}`}
       onClick={scrollToTop}
     >
-      ↑
+      <FontAwesomeIcon icon={faAngleUp} />
     </button>
   );
 };

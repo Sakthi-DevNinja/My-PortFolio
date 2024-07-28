@@ -52,6 +52,14 @@ body {
   /* padding: 15px 16px 50px; */
 }
 
+.about-content, .serv-content, .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 
 .flex{
   display: flex;
@@ -144,7 +152,7 @@ h1 {
 
 section{
   /* height: calc(100vh - 70px); */
-  height: 100vh;
+  min-height: 100vh;
   background-color:  var(--primary-color);
   /* border-bottom: 5px solid var(--text-color); */
   padding: 50px 70px 40px;
@@ -292,8 +300,8 @@ footer{
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   font-weight: 800;
   box-shadow: 0px 2px 9px #161616;
   display: none;
@@ -303,6 +311,10 @@ footer{
 .scroll-up-btn.show {
   display: flex ;
   transition: all 0.5s ease-in-out;
+}
+
+.scroll-up-btn .svg-inline--fa{
+  font-size: 1.3em;
 }
 
 

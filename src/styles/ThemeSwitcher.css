@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100px; /* Adjust width as needed */
+  width: 70px; /* Adjust width as needed */
 }
 
 .theme-switcher-slider input[type="range"] {
@@ -41,7 +41,7 @@
   justify-content: space-between;
   position: absolute;
   top: 50%;
-  width: 95px;
+  width: 65px;
   transform: translateY(-50%);
 }
 

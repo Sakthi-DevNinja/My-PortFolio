@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun, faTint } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
 import '../styles/ThemeSwitcher.css'; // Ensure this path is correct
 
 const ThemeSwitcher = () => {
@@ -36,10 +36,7 @@ const ThemeSwitcher = () => {
         setTheme('dark');
         break;
       case 1:
-        setTheme('blue');
-        break;
-        case 2:
-          setTheme('light');
+        setTheme('light');
           break;
       default:
             setTheme('dark');
@@ -53,9 +50,6 @@ const ThemeSwitcher = () => {
     switch (newTheme) {
       case 'dark':
         setSliderValue(0);
-        break;
-      case 'blue':
-        setSliderValue(1);
         break;
       case 'light':
         setSliderValue(2);
@@ -84,12 +78,7 @@ const ThemeSwitcher = () => {
           >
             <FontAwesomeIcon icon={faMoon} title="Dark Theme" />
           </span>
-          <span 
-            className={`icon ${theme === 'blue' ? 'active' : ''}`}
-            onClick={() => handleIconClick('blue')}
-          >
-            <FontAwesomeIcon icon={faTint} title="Blue Theme" />
-          </span>
+          
           <span 
             className={`icon ${theme === 'light' ? 'active' : ''}`}
             onClick={() => handleIconClick('light')}
