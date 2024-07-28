@@ -130,6 +130,11 @@ textarea {
         margin: 25px auto 0;
     }
 
+    .input-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
         
 
 
