@@ -47,7 +47,7 @@ img.aboutme-img {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
 
     section{
         min-height: 100vh;

@@ -51,13 +51,20 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .serv-content .card {
+        width: calc(50% - 20px);
+    }
 
+}
+
+@media (max-width: 480px) {
+    
     .serv-content {
         flex-direction: column;
         width: 100%;
     }
-
+    
     .serv-content .card {
         width: 100%;
     }

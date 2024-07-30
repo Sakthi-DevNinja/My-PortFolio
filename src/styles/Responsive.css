@@ -1,46 +1,41 @@
   
+  
   @media (max-width: 768px) {
     
-  }
-  
-  
-  
-  @media (max-width: 480px) {
-
     section{
       padding: 50px 20px 40px;
       height: auto;
     }
-
+    
     nav{display: none;}
     .theme-switcher{zoom: 65%;}
     .nav-wrapper{padding: 0 10px;}
-
+    
     .side-bar-close{display: none;}
     .nav-rt{align-items: center;gap:15px}
     .side-bar-icons{display: flex;}
-
+    
     .main-container{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 30px;
-    
+      
     }
-
+    
     
     .lt-blk, .rt-blk{
       width: 100%;
       padding: 0;
       text-align: center;
     }
-
+    
     
     .sakthi{
       width: 320px;
     }
-
+    
     .name{font-size: 45px;}
     .about-me {font-size: 16px;color: var(--text-color)}
     
@@ -53,15 +48,15 @@
       gap: 10px;
       margin-top: 10px;
       font-size: 12px;
-  }
-
-  .welcome-intro{font-size: 12px;}
+    }
+    
+    .welcome-intro{font-size: 12px;}
     
     .dynamic-role .typing{
       font-size:18px; 
     }
     
-     /* .md-hide{display: none;} */
+    /* .md-hide{display: none;} */
     
     .personal-dtls{
       display: flex;
@@ -70,13 +65,13 @@
       justify-content: center;
       gap: 2px;
     }
-
+    
     .about-me{font-size: 16px;}
-
+    
     .about-me{
       text-align: center;
     }
-
+    
     .contact-list {
       justify-content: center;
     }
@@ -87,15 +82,15 @@
     }
     
     .class-hdr {
-        font-size: 25px;
-        /* color: #1e2f97; */
-        /* background: #cad5e2; */
-        /* padding: 7px 35px; */
+      font-size: 25px;
+      /* color: #1e2f97; */
+      /* background: #cad5e2; */
+      /* padding: 7px 35px; */
         /* width: fit-content; */
         /* border-radius: 46px; */
-    }
-
-    .content-dtl {
+      }
+      
+      .content-dtl {
         /* background: #cad5e2f5; */
         /* padding: 15px; */
         text-align: left;
@@ -103,7 +98,14 @@
         line-height: 24px;
         letter-spacing: 0.035em;
         margin-top: 10px;
+      }
+      
     }
-        
-  }
+    
+
+
+    @media (max-width: 480px) {
   
+    }
+    
+    
