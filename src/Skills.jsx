@@ -16,6 +16,13 @@ import mysql from './images/logo/mysql.png';
 import wordpress from './images/logo/wp.png';
 import figma from './images/logo/figma.png';
 import photoshop from './images/logo/ps.png';
+import xd from './images/logo/xd.png';
+import bootstrap from './images/logo/bootstrap.png';
+import tailwind from './images/logo/tailwind.png';
+import jquery from './images/logo/jquery.png';
+import api from './images/logo/api.png';
+import git from './images/logo/git.png';
+import github from './images/logo/github.png';
  
 
 // const logos = [html, css, js, rjs, php, mysql, wordpress, figma, photoshop];
@@ -41,7 +48,7 @@ const uiux = [
   },
   {
     name: 'Adobe XD',
-    logo: rjs,
+    logo: xd,
     desc: 'Skilled in designing user interfaces and user experiences with Adobe XD, including wireframing, prototyping, and creating interactive design elements.'
   }
 ];
@@ -59,12 +66,12 @@ const frontEnd = [
   },
   {
     name: 'Bootstrap',
-    logo: rjs,
+    logo: bootstrap,
     desc: 'Experienced in using Bootstrap to rapidly develop responsive, mobile-first web pages with pre-designed components and utilities.'
   },
   {
     name: 'Tailwind CSS',
-    logo: rjs,
+    logo: tailwind,
     desc: 'Proficient in utilizing Tailwind CSS for creating custom, utility-first designs with a focus on modular and maintainable styling.'
   },
   {
@@ -74,7 +81,7 @@ const frontEnd = [
   },
   {
     name: 'jQuery',
-    logo: js,
+    logo: jquery,
     desc: 'Familiar with jQuery for simplifying JavaScript operations and enhancing user interactions with efficient DOM manipulation and event handling.'
   },
   {
@@ -102,25 +109,26 @@ const backEnd = [
   },
   {
     name: 'RESTful API',
-    logo: mysql,
+    logo: api,
     desc: 'Skilled in integrating and working with RESTful APIs to enable communication between web applications and external services.'
-  },
-  {
-    name: 'cURL',
-    logo: mysql,
-    desc: 'Experienced in using cURL for making HTTP requests to interact with web services and retrieve or send data from/to APIs.'
   }
+  // ,
+  // {
+  //   name: 'cURL',
+  //   logo: mysql,
+  //   desc: 'Experienced in using cURL for making HTTP requests to interact with web services and retrieve or send data from/to APIs.'
+  // }
 ];
 
 const versionControl = [
   {
     name: 'Git',
-    logo: html,
+    logo: git,
     desc: 'Intermediate knowledge of Git for version control, including branching, merging, and resolving conflicts to manage code effectively.'
   },
   {
     name: 'GitHub',
-    logo: html,
+    logo: github,
     desc: 'Proficient in using GitHub for collaborative development, including managing repositories, pull requests, and contributing to open-source projects.'
   }
 ];
