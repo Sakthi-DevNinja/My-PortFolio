@@ -12,6 +12,7 @@
     padding: 30px;
     border-radius: 10px;
     background: var(--secondary-color);
+    overflow: hidden;
 }
 
 .skill-logo, .skill-hdr {
