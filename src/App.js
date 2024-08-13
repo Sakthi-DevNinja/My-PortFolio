@@ -1,5 +1,6 @@
 
 // Sections
+import Spacer from './Spacer';
 import Header from './Header';
 import Landing from './Landing';
 import Aboutme from './Aboutme';
@@ -49,8 +50,8 @@ function App() {
       
       <ParticlesComponent id="particles" />
       <Scrolltotop />
-
       <Header />
+      <Spacer />
       <Landing />
       <Aboutme />
       <Skills />

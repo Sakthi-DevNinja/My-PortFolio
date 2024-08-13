@@ -13,6 +13,7 @@
     border-radius: 10px;
     background: var(--secondary-color);
     overflow: hidden;
+    min-height: 300px;
 }
 
 .skill-logo, .skill-hdr {

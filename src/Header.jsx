@@ -40,7 +40,7 @@ const Header = () => {
         </a>
         <nav>
           <ul className="flex">
-            <li className="nav-link"><a href="#home" rel="noreferrer">Home</a></li>
+            <li className="nav-link"><a href="#spacer" rel="noreferrer">Home</a></li>
             <li className="nav-link"><a href="#aboutme" rel="noreferrer">About</a></li>
             <li className="nav-link"><a href="#skills" rel="noreferrer">Skills</a></li>
             {/* <li className="nav-link"><a href="#experience" rel="noreferrer">Experience</a></li> */}

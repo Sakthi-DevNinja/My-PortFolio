@@ -39,7 +39,7 @@
     background: var(--dynamic-txt);
 }
 
-.serv-content .card:hover .svg-inline--fa, .serv-content .card:hover .text, .serv-content .card:hover p {
+.serv-content .card:hover .svg-inline--fa, .serv-content .card:hover .text{
     color: var(--text-color);
     filter: drop-shadow(2px 2px 1px black);
 }
