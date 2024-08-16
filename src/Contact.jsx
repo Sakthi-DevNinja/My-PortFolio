@@ -55,21 +55,21 @@ const Contact = () => {
         </div>
 
         <div className="column right">
-          <div class="text">Message me</div>
+          <div className="text">Message me</div>
           <form action=".">
             <div className="input-fields">
 
               <div className="input-flex">
                 <div className="input-fld username">
-                  <input type="text" className="" id="" value="" placeholder="Name"  />
+                  <input type="text" className="" id=""  placeholder="Name"  />
                 </div>
                 <div className="input-fld email">
-                  <input type="email" className="" id="" value="" placeholder="Email" />
+                  <input type="email" className="" id=""   placeholder="Email" />
                 </div>
               </div>
               
               <div className="input-fld subject">
-                  <input type="text" className="" id="" value="" placeholder="Subject" />
+                  <input type="text" className="" id=""  placeholder="Subject" />
               </div>
               <div className="input-fld message">
                   <textarea name="message" id="email-msg" className="" cols="30" rows="10" placeholder="Message.."></textarea>

@@ -158,7 +158,7 @@ const Skills = () => {
           </div>
           <div className="skills-wrapper">
           {uiux.map((skill, i) => (
-            <div className="skills-card">
+            <div className="skills-card" key={i}>
                 <div className="skill-logo">
                   <img src={skill.logo} alt={skill.name} />
                 </div>
@@ -175,7 +175,7 @@ const Skills = () => {
           </div>
           <div className="skills-wrapper">
           {frontEnd.map((skill, i) => (
-            <div className="skills-card">
+            <div className="skills-card" key={i}> 
                 <div className="skill-logo">
                   <img src={skill.logo} alt={skill.name} />
                 </div>
@@ -192,7 +192,7 @@ const Skills = () => {
           </div>
           <div className="skills-wrapper">
           {backEnd.map((skill, i) => (
-            <div className="skills-card">
+            <div className="skills-card" key={i} >
                 <div className="skill-logo">
                   <img src={skill.logo} alt={skill.name} />
                 </div>
@@ -209,7 +209,7 @@ const Skills = () => {
           </div>
           <div className="skills-wrapper">
           {versionControl.map((skill, i) => (
-            <div className="skills-card">
+            <div className="skills-card" key={i}>
                 <div className="skill-logo">
                   <img src={skill.logo} alt={skill.name} />
                 </div>
