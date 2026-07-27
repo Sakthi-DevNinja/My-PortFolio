@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faFacebookF, faInstagram, faLinkedinIn, faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebookF, faInstagram, faLinkedinIn, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 
 
 const SocialMedia = () => {
