@@ -12,7 +12,6 @@ const SocialMedia = () => {
 
         <a href='https://www.linkedin.com/in/sakthivel-dev' target='_blank' rel="noreferrer" className="social-links linkedin"><FontAwesomeIcon icon={faLinkedinIn} /></a>
 
-        <a href='https://github.com/Sakthi-DevNinja' target='_blank' rel="noreferrer" className="social-links github"><FontAwesomeIcon icon={faGithub} /></a>  
 
         <a href='https://www.facebook.com/profile.php?id=100011062291623&mibextid=ZbWKwL' target='_blank' rel="noreferrer" className="social-links facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
 
